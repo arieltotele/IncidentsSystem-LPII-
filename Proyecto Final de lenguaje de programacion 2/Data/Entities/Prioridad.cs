@@ -9,22 +9,12 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
 {
     [Table("Prioridad")]
 
-    public class Prioridad
-    {
-        public int PrioridadId { get; set; }
+    public class Prioridad:BaseEntity {
 
         public int SladId { get; set; }
         public Sla Sla { get; set; }
 
         public string Nombre { get; set; }
-
-        public string Estatus { get; set; }
-
-        public byte Borrado { get; set; }
-
-        public DateTimeOffset FechaRegistro { get; set; }
-
-        public DateTimeOffset FechaModificacion { get; set; }
 
         public int Creadopor { get; set; }
 

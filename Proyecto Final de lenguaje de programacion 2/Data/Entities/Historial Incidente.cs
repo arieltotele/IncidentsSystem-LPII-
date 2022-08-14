@@ -10,24 +10,12 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
 {
     [Table("Historial Incidente")]
 
-    public class Historial_Incidente
-    {
-        [Key]
-
-        public int HistorialIncidenteId { get; set; }
+    public class Historial_Incidente:BaseEntity {
 
         public int IncidenteId { get; set; }
         public Incidente Incidente { get; set; }
 
         public string Comentario { get; set; }
-
-        public string Estatus { get; set; }
-
-        public byte Borrado { get; set; }
-
-        public DateTimeOffset FechaRegistro { get; set; }
-
-        public DateTimeOffset FechaModificacion { get; set; }
 
         public int Creadopor { get; set; }
 

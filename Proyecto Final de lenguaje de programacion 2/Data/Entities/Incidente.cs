@@ -9,9 +9,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
 {
     [Table("Incidente")] 
 
-    public class Incidente
-    {
-        public int IncidenteId { get; set; }
+    public class Incidente:BaseEntity{
 
         public int UsuarioReportadoId { get; set; }
 
@@ -28,14 +26,6 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
         public DateTimeOffset FechaCierre { get; set; }
 
         public string ComentarioCierre { get; set; }
-
-        public string Estatus { get; set; }
-
-        public byte Borrado { get; set; }
-
-        public DateTimeOffset FechaRegistro { get; set; }
-
-        public DateTimeOffset FechaModificacion { get; set; }
 
         public int Creadopor { get; set; }
 
