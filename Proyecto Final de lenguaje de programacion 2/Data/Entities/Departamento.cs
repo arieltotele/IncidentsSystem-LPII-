@@ -7,7 +7,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
 {
-    [Table("Departamento")]
 
     public class Departamento:BaseEntity
     {

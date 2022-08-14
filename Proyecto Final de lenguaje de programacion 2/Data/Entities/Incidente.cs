@@ -16,8 +16,10 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
         public int UsuarioAsignadoId { get; set; }
 
         public int PrioridadId { get; set; }
+        public Prioridad prioridad { get; set; }
 
         public int DepartamentoId { get; set; }
+        public Departamento departamento { get; set; }  
 
         public string Titulo { get; set; }
 

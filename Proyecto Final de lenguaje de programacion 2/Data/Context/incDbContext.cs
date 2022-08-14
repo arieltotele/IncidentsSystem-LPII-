@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities;
 
 namespace Proyecto_Final_de_lenguaje_de_programacion_2
@@ -28,6 +23,22 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2
         public DbSet<Incidente> incidentes { get; set; }
 
         public DbSet<Historial_Incidente> historial_Incidentes { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Departamento>()
+                .HasKey(pk => pk.Id)
+                .ToTable("Departamento");
+
+            modelBuilder.Entity<Departamento>()
+                .Property(p => p.Nombre)
+                .HasMaxLength(100)
+                .IsRequired()
+                .HasColumnType("varchar");
+
+        }
 
 
     }
