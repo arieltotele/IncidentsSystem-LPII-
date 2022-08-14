@@ -8,9 +8,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        
         [STAThread]
         static void Main()
         {
