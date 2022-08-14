@@ -12,6 +12,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
     public class Prioridad:BaseEntity {
 
         public int SladId { get; set; }
+
         public Sla Sla { get; set; }
 
         public string Nombre { get; set; }
@@ -19,6 +20,8 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
         public int Creadopor { get; set; }
 
         public int Modificadopor { get; set; }
+
+        public Usuarioid usuario { get; set; }
 
     }
 }

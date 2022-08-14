@@ -30,5 +30,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
         public int Creadopor { get; set; }
 
         public int Modificadopor { get; set; }
+
+        public Usuarioid usuario { get; set; }
     }
 }
