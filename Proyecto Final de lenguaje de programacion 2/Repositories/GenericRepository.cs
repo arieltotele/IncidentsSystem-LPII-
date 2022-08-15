@@ -44,7 +44,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Repositories
 
         public T getById(int Id)
         {
-            _set.FirstOrDefault(x => x.Id == Id);
+           return _set.FirstOrDefault(x => x.Id == Id);
         }
 
         public OperationResult Update(T model)
