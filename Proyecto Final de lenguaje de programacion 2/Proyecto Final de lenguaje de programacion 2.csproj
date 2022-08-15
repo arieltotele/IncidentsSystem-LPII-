@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -56,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Entities\BaseEntity.cs" />
     <Compile Include="Data\Entities\Departamento.cs" />
     <Compile Include="Data\Entities\Historial Incidente.cs" />
     <Compile Include="Data\Entities\Incidente.cs" />
@@ -63,10 +67,14 @@
     <Compile Include="Data\Entities\Puesto.cs" />
     <Compile Include="Data\Entities\Sla.cs" />
     <Compile Include="Data\Entities\Usuarioid.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Migrations\202208150836259_empty-migration.cs" />
+    <Compile Include="Migrations\202208150836259_empty-migration.designer.cs">
+      <DependentUpon>202208150836259_empty-migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="UI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Context\incDbContext.cs" />
@@ -79,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Migrations\202208082358544_primaria.resx">
       <DependentUpon>202208082358544_primaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208150836259_empty-migration.resx">
+      <DependentUpon>202208150836259_empty-migration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
