@@ -67,6 +67,8 @@
     <Compile Include="Data\Entities\Puesto.cs" />
     <Compile Include="Data\Entities\Sla.cs" />
     <Compile Include="Data\Entities\Usuarioid.cs" />
+    <Compile Include="Interfaces\IIncidentRepository.cs" />
+    <Compile Include="Interfaces\OperationResult.cs" />
     <Compile Include="Migrations\202208150836259_empty-migration.cs" />
     <Compile Include="Migrations\202208150836259_empty-migration.designer.cs">
       <DependentUpon>202208150836259_empty-migration.cs</DependentUpon>
