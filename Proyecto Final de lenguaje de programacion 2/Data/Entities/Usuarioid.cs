@@ -8,42 +8,43 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
 {
-    [Table("usuarioId")]
 
-    public class Usuarioid
-    {
-        [Key]
-        public int usuarioId { get; set; }
+    public class Usuarioid:BaseEntity {
 
         public int puestoId { get; set; }
         public Puesto Puesto { get; set; }
 
         public string Nombre { get; set; }
 
-        public string apellido { get; set; }
+        public string Apellido { get; set; }
 
+        [Required]
+        [MaxLength(11)]
+        [Column(TypeName = "varchar")]
         public string Cedula { get; set; }
 
+        [MaxLength(50)]
+        [Column(TypeName = "varchar")]
         public string Correo { get; set; }
 
-        public string telefono { get; set; }
+        [MaxLength(15)]
+        [Column(TypeName = "varchar")]
+        public string Telefono { get; set; }
 
         public DateTime FechaNacimineto { get; set; }
 
+        [Required]
+        [MaxLength(100)]
+        [Column(TypeName = "varchar")]
         public string nombreusuario { get; set; }
 
+        [Required]
+        [MaxLength(500)]
+        [Column(TypeName = "varchar")]
         public string contraseña { get; set; }
 
-        public string Estatus { get; set; }
+        public int Creadopor { get; set; }
 
-        public  byte Borrado { get; set; }
-
-       public DateTimeOffset FechaRegistro { get; set; }
-
-        public DateTimeOffset FechaModificacion { get; set; }
-
-        public int creadopor { get; set; }
-
-        public int Modificadopo { get; set; }
+        public int Modificadopor { get; set; }
     }
 }
