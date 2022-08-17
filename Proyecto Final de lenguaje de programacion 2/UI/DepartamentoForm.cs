@@ -132,7 +132,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.UI
                 }
                 else
                 {
-                    MessageBox.Show("El departamento ha sido ekiminado exitosamente.");
+                    MessageBox.Show("El departamento ha sido eliminado exitosamente.");
                     fullDTGV();
                 }
             }

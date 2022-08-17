@@ -144,6 +144,7 @@
             this.btnBorrarPrioridad.TabIndex = 23;
             this.btnBorrarPrioridad.Text = "Borrar";
             this.btnBorrarPrioridad.UseVisualStyleBackColor = true;
+            this.btnBorrarPrioridad.Click += new System.EventHandler(this.btnBorrarPrioridad_Click);
             // 
             // btnActualizarPrioridad
             // 

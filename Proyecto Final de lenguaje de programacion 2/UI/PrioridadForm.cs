@@ -121,5 +121,29 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.UI
                 }
             }
         }
+
+        private void btnBorrarPrioridad_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(txtSlaIdPrioridad.Text))
+            {
+                MessageBox.Show("Debe de completar el campo ID.");
+            }
+            else
+            {
+
+                actualPriori = _repository.getById(Int32.Parse(txtPrioridadID.Text));
+
+                OperationResult result = _repository.Delete(actualPriori);
+                if (!result.Succes)
+                {
+                    MessageBox.Show(result.Message);
+                }
+                else
+                {
+                    MessageBox.Show("La prioridad ha sido eliminado exitosamente.");
+                    fullDTGV();
+                }
+            }
+        }
     }
 }
