@@ -7,13 +7,13 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class primaria : IMigrationMetadata
+    public sealed partial class departmentmodification : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(primaria));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(departmentmodification));
         
         string IMigrationMetadata.Id
         {
-            get { return "202208082358544_primaria"; }
+            get { return "202208171644257_department-modification"; }
         }
         
         string IMigrationMetadata.Source

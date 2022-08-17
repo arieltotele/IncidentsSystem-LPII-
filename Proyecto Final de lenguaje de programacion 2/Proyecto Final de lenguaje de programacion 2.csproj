@@ -71,10 +71,23 @@
     <Compile Include="Data\Entities\Usuarioid.cs" />
     <Compile Include="Interfaces\IGenericRepository.cs" />
     <Compile Include="Interfaces\OperationResult.cs" />
-    <Compile Include="Migrations\202208150836259_empty-migration.cs" />
-    <Compile Include="Migrations\202208150836259_empty-migration.designer.cs">
-      <DependentUpon>202208150836259_empty-migration.cs</DependentUpon>
+    <Compile Include="Migrations\202208171634151_initial.cs" />
+    <Compile Include="Migrations\202208171634151_initial.designer.cs">
+      <DependentUpon>202208171634151_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208171644257_department-modification.cs" />
+    <Compile Include="Migrations\202208171644257_department-modification.designer.cs">
+      <DependentUpon>202208171644257_department-modification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208171709336_nullable-fields.cs" />
+    <Compile Include="Migrations\202208171709336_nullable-fields.designer.cs">
+      <DependentUpon>202208171709336_nullable-fields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208171724208_user-not-needed.cs" />
+    <Compile Include="Migrations\202208171724208_user-not-needed.designer.cs">
+      <DependentUpon>202208171724208_user-not-needed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repositories\DepartamentoRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="Repositories\HistorialncidenteRepository.cs" />
@@ -96,11 +109,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Context\incDbContext.cs" />
-    <Compile Include="Migrations\202208082358544_primaria.cs" />
-    <Compile Include="Migrations\202208082358544_primaria.designer.cs">
-      <DependentUpon>202208082358544_primaria.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Historial de IncidentesForm.cs">
@@ -145,11 +153,17 @@
     <Compile Include="UI\SlaForm.Designer.cs">
       <DependentUpon>SlaForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Migrations\202208082358544_primaria.resx">
-      <DependentUpon>202208082358544_primaria.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202208171634151_initial.resx">
+      <DependentUpon>202208171634151_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202208150836259_empty-migration.resx">
-      <DependentUpon>202208150836259_empty-migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202208171644257_department-modification.resx">
+      <DependentUpon>202208171644257_department-modification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208171709336_nullable-fields.resx">
+      <DependentUpon>202208171709336_nullable-fields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208171724208_user-not-needed.resx">
+      <DependentUpon>202208171724208_user-not-needed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
