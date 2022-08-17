@@ -83,6 +83,12 @@
     <Compile Include="Repositories\PuestoRepository.cs" />
     <Compile Include="Repositories\SlaRepository.cs" />
     <Compile Include="Repositories\UsuarioidRepository.cs" />
+    <Compile Include="UI\DepartamentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DepartamentoForm.Designer.cs">
+      <DependentUpon>DepartamentoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,17 +103,47 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Historial de IncidentesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Historial de IncidentesForm.Designer.cs">
+      <DependentUpon>Historial de IncidentesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IncidenteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\IncidenteForm.Designer.cs">
+      <DependentUpon>IncidenteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\PrioridadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PrioridadForm.Designer.cs">
+      <DependentUpon>PrioridadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PuestoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PuestoForm.Designer.cs">
+      <DependentUpon>PuestoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\RegistroForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\RegistroForm.Designer.cs">
       <DependentUpon>RegistroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SlaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SlaForm.Designer.cs">
+      <DependentUpon>SlaForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Migrations\202208082358544_primaria.resx">
       <DependentUpon>202208082358544_primaria.cs</DependentUpon>
@@ -124,11 +160,29 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\DepartamentoForm.resx">
+      <DependentUpon>DepartamentoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Historial de IncidentesForm.resx">
+      <DependentUpon>Historial de IncidentesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\IncidenteForm.resx">
+      <DependentUpon>IncidenteForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrioridadForm.resx">
+      <DependentUpon>PrioridadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PuestoForm.resx">
+      <DependentUpon>PuestoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\RegistroForm.resx">
       <DependentUpon>RegistroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SlaForm.resx">
+      <DependentUpon>SlaForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
