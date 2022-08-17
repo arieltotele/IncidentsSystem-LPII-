@@ -87,6 +87,18 @@
     <Compile Include="Migrations\202208171724208_user-not-needed.designer.cs">
       <DependentUpon>202208171724208_user-not-needed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208171916188_update-in-puesto-entity.cs" />
+    <Compile Include="Migrations\202208171916188_update-in-puesto-entity.designer.cs">
+      <DependentUpon>202208171916188_update-in-puesto-entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208171933050_update-in-baseEntity.cs" />
+    <Compile Include="Migrations\202208171933050_update-in-baseEntity.designer.cs">
+      <DependentUpon>202208171933050_update-in-baseEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208172031072_user-relation-with-puesto-deleted.cs" />
+    <Compile Include="Migrations\202208172031072_user-relation-with-puesto-deleted.designer.cs">
+      <DependentUpon>202208172031072_user-relation-with-puesto-deleted.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repositories\DepartamentoRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -164,6 +176,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208171724208_user-not-needed.resx">
       <DependentUpon>202208171724208_user-not-needed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208171916188_update-in-puesto-entity.resx">
+      <DependentUpon>202208171916188_update-in-puesto-entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208171933050_update-in-baseEntity.resx">
+      <DependentUpon>202208171933050_update-in-baseEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208172031072_user-relation-with-puesto-deleted.resx">
+      <DependentUpon>202208172031072_user-relation-with-puesto-deleted.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

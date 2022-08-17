@@ -4,7 +4,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
 {
     public class BaseEntity{
 
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(2)]

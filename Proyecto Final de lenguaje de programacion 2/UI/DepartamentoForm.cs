@@ -48,8 +48,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.UI
                     Borrado = 0,
                     FechaRegistro = DateTimeOffset.Now,
                     Creadopor = 0,
-                    Modificadopor = 0
-                    
+                    Modificadopor = 0                    
                 };
                 _repository.Create(departamento);
 

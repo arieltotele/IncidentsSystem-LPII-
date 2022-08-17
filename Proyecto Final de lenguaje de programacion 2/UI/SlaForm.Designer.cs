@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCreadoporSla = new System.Windows.Forms.TextBox();
+            this.txtIdSla = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtUsuarioSla = new System.Windows.Forms.TextBox();
             this.txtModificadoporSla = new System.Windows.Forms.TextBox();
@@ -49,7 +49,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 63);
+            this.label1.Location = new System.Drawing.Point(9, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 0;
@@ -58,27 +58,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 136);
+            this.label2.Location = new System.Drawing.Point(9, 202);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cantidad de Horas ";
             // 
-            // txtCreadoporSla
+            // txtIdSla
             // 
-            this.txtCreadoporSla.Location = new System.Drawing.Point(114, 198);
-            this.txtCreadoporSla.Name = "txtCreadoporSla";
-            this.txtCreadoporSla.Size = new System.Drawing.Size(100, 20);
-            this.txtCreadoporSla.TabIndex = 9;
+            this.txtIdSla.Location = new System.Drawing.Point(114, 63);
+            this.txtIdSla.Name = "txtIdSla";
+            this.txtIdSla.Size = new System.Drawing.Size(100, 20);
+            this.txtIdSla.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 198);
+            this.label3.Location = new System.Drawing.Point(12, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(21, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Creado por";
+            this.label3.Text = "ID:";
             // 
             // txtUsuarioSla
             // 
@@ -114,14 +114,14 @@
             // 
             // txtDescripcionSla
             // 
-            this.txtDescripcionSla.Location = new System.Drawing.Point(114, 60);
+            this.txtDescripcionSla.Location = new System.Drawing.Point(111, 126);
             this.txtDescripcionSla.Name = "txtDescripcionSla";
             this.txtDescripcionSla.Size = new System.Drawing.Size(100, 20);
             this.txtDescripcionSla.TabIndex = 14;
             // 
             // txtCantidadHorasSla
             // 
-            this.txtCantidadHorasSla.Location = new System.Drawing.Point(114, 136);
+            this.txtCantidadHorasSla.Location = new System.Drawing.Point(111, 202);
             this.txtCantidadHorasSla.Name = "txtCantidadHorasSla";
             this.txtCantidadHorasSla.Size = new System.Drawing.Size(100, 20);
             this.txtCantidadHorasSla.TabIndex = 15;
@@ -142,6 +142,7 @@
             this.btnBorrarSla.TabIndex = 20;
             this.btnBorrarSla.Text = "Borrar";
             this.btnBorrarSla.UseVisualStyleBackColor = true;
+            this.btnBorrarSla.Click += new System.EventHandler(this.btnBorrarSla_Click);
             // 
             // btnActualizarSla
             // 
@@ -151,6 +152,7 @@
             this.btnActualizarSla.TabIndex = 19;
             this.btnActualizarSla.Text = "Actualizar";
             this.btnActualizarSla.UseVisualStyleBackColor = true;
+            this.btnActualizarSla.Click += new System.EventHandler(this.btnActualizarSla_Click);
             // 
             // btnBuscarSla
             // 
@@ -160,6 +162,7 @@
             this.btnBuscarSla.TabIndex = 18;
             this.btnBuscarSla.Text = "Buscar";
             this.btnBuscarSla.UseVisualStyleBackColor = true;
+            this.btnBuscarSla.Click += new System.EventHandler(this.btnBuscarSla_Click);
             // 
             // btnCrearSla
             // 
@@ -169,6 +172,7 @@
             this.btnCrearSla.TabIndex = 17;
             this.btnCrearSla.Text = "Crear";
             this.btnCrearSla.UseVisualStyleBackColor = true;
+            this.btnCrearSla.Click += new System.EventHandler(this.btnCrearSla_Click);
             // 
             // SlaForm
             // 
@@ -187,12 +191,13 @@
             this.Controls.Add(this.txtModificadoporSla);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtCreadoporSla);
+            this.Controls.Add(this.txtIdSla);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "SlaForm";
             this.Text = "SlaForm";
+            this.Load += new System.EventHandler(this.SlaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -203,7 +208,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCreadoporSla;
+        private System.Windows.Forms.TextBox txtIdSla;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUsuarioSla;
         private System.Windows.Forms.TextBox txtModificadoporSla;

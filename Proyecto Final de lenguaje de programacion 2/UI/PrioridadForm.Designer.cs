@@ -43,6 +43,8 @@
             this.btnActualizarPrioridad = new System.Windows.Forms.Button();
             this.btnBuscarPrioridad = new System.Windows.Forms.Button();
             this.btnCrearPrioridad = new System.Windows.Forms.Button();
+            this.txtPrioridadID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPrioridad)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +75,7 @@
             // 
             // txtCreadoporPrioridad
             // 
-            this.txtCreadoporPrioridad.Location = new System.Drawing.Point(75, 177);
+            this.txtCreadoporPrioridad.Location = new System.Drawing.Point(285, 165);
             this.txtCreadoporPrioridad.Name = "txtCreadoporPrioridad";
             this.txtCreadoporPrioridad.Size = new System.Drawing.Size(100, 20);
             this.txtCreadoporPrioridad.TabIndex = 11;
@@ -81,7 +83,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 177);
+            this.label3.Location = new System.Drawing.Point(222, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 10;
@@ -151,6 +153,7 @@
             this.btnActualizarPrioridad.TabIndex = 22;
             this.btnActualizarPrioridad.Text = "Actualizar";
             this.btnActualizarPrioridad.UseVisualStyleBackColor = true;
+            this.btnActualizarPrioridad.Click += new System.EventHandler(this.btnActualizarPrioridad_Click);
             // 
             // btnBuscarPrioridad
             // 
@@ -160,6 +163,7 @@
             this.btnBuscarPrioridad.TabIndex = 21;
             this.btnBuscarPrioridad.Text = "Buscar";
             this.btnBuscarPrioridad.UseVisualStyleBackColor = true;
+            this.btnBuscarPrioridad.Click += new System.EventHandler(this.btnBuscarPrioridad_Click);
             // 
             // btnCrearPrioridad
             // 
@@ -169,6 +173,23 @@
             this.btnCrearPrioridad.TabIndex = 20;
             this.btnCrearPrioridad.Text = "Crear";
             this.btnCrearPrioridad.UseVisualStyleBackColor = true;
+            this.btnCrearPrioridad.Click += new System.EventHandler(this.btnCrearPrioridad_Click);
+            // 
+            // txtPrioridadID
+            // 
+            this.txtPrioridadID.Location = new System.Drawing.Point(75, 165);
+            this.txtPrioridadID.Name = "txtPrioridadID";
+            this.txtPrioridadID.Size = new System.Drawing.Size(100, 20);
+            this.txtPrioridadID.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 165);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(21, 13);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "ID:";
             // 
             // PrioridadForm
             // 
@@ -176,6 +197,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 491);
+            this.Controls.Add(this.txtPrioridadID);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnBorrarPrioridad);
             this.Controls.Add(this.btnActualizarPrioridad);
             this.Controls.Add(this.btnBuscarPrioridad);
@@ -193,6 +216,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PrioridadForm";
             this.Text = "PrioridadForm";
+            this.Load += new System.EventHandler(this.PrioridadForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPrioridad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -216,5 +240,7 @@
         private System.Windows.Forms.Button btnActualizarPrioridad;
         private System.Windows.Forms.Button btnBuscarPrioridad;
         private System.Windows.Forms.Button btnCrearPrioridad;
+        private System.Windows.Forms.TextBox txtPrioridadID;
+        private System.Windows.Forms.Label label6;
     }
 }

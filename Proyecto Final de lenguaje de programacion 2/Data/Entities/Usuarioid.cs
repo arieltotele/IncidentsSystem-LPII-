@@ -12,7 +12,6 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
     public class Usuarioid:BaseEntity {
 
         public int puestoId { get; set; }
-        public Puesto Puesto { get; set; }
 
         public string Nombre { get; set; }
 

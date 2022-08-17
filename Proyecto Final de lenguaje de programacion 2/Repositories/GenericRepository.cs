@@ -20,6 +20,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Repositories
         public T Create(T model)
         {
             _dbContext.Entry(model).State = EntityState.Added;
+        
             _dbContext.SaveChanges();
 
             return model;

@@ -142,6 +142,7 @@
             this.btnCrearPuesto.TabIndex = 13;
             this.btnCrearPuesto.Text = "Crear";
             this.btnCrearPuesto.UseVisualStyleBackColor = true;
+            this.btnCrearPuesto.Click += new System.EventHandler(this.btnCrearPuesto_Click);
             // 
             // btnBuscarPuesto
             // 
@@ -193,6 +194,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PuestoForm";
             this.Text = "PuestoForm";
+            this.Load += new System.EventHandler(this.PuestoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPuesto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -87,10 +87,6 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2
                 .HasMaxLength(100)
                 .IsRequired()
                 .HasColumnType("varchar");
-
-            modelBuilder.Entity<Usuarioid>()
-                .HasRequired(p => p.Puesto)
-                .WithRequiredPrincipal(ad => ad.usuario);
         }
 
 
