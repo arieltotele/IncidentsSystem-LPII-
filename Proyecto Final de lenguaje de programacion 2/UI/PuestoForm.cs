@@ -29,7 +29,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.UI
 
         private void btnCrearPuesto_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrWhiteSpace(txtNombrePuesto.Text) &&
+            if (String.IsNullOrWhiteSpace(txtNombrePuesto.Text) ||
                 String.IsNullOrWhiteSpace(txtDepartamentoIdpt.Text))
             {
                 MessageBox.Show("Debe llenar el campo de Nombre y ID");

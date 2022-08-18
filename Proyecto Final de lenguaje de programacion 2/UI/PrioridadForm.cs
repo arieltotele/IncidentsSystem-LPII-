@@ -37,7 +37,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.UI
 
         private void btnCrearPrioridad_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrWhiteSpace(txtNombrePrioridad.Text) &&
+            if (String.IsNullOrWhiteSpace(txtNombrePrioridad.Text) ||
                 String.IsNullOrWhiteSpace(txtSlaIdPrioridad.Text))
             {
                 MessageBox.Show("Debe llenar el campo de Nombre");

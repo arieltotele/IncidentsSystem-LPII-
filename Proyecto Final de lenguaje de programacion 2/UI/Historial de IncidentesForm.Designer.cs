@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCreadoporHistorial = new System.Windows.Forms.TextBox();
+            this.txtIdHistorial = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtUsuarioHistorial = new System.Windows.Forms.TextBox();
             this.txtModificadoporHistorial = new System.Windows.Forms.TextBox();
@@ -64,21 +64,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Comentario";
             // 
-            // txtCreadoporHistorial
+            // txtIdHistorial
             // 
-            this.txtCreadoporHistorial.Location = new System.Drawing.Point(82, 198);
-            this.txtCreadoporHistorial.Name = "txtCreadoporHistorial";
-            this.txtCreadoporHistorial.Size = new System.Drawing.Size(100, 20);
-            this.txtCreadoporHistorial.TabIndex = 15;
+            this.txtIdHistorial.Location = new System.Drawing.Point(82, 198);
+            this.txtIdHistorial.Name = "txtIdHistorial";
+            this.txtIdHistorial.Size = new System.Drawing.Size(100, 20);
+            this.txtIdHistorial.TabIndex = 15;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(17, 201);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 13);
+            this.label9.Size = new System.Drawing.Size(21, 13);
             this.label9.TabIndex = 14;
-            this.label9.Text = "Creado por";
+            this.label9.Text = "ID:";
             // 
             // txtUsuarioHistorial
             // 
@@ -169,6 +169,7 @@
             this.btnCrearHistorial.TabIndex = 32;
             this.btnCrearHistorial.Text = "Crear";
             this.btnCrearHistorial.UseVisualStyleBackColor = true;
+            this.btnCrearHistorial.Click += new System.EventHandler(this.btnCrearHistorial_Click);
             // 
             // Historial_de_IncidentesForm
             // 
@@ -187,12 +188,13 @@
             this.Controls.Add(this.txtModificadoporHistorial);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtCreadoporHistorial);
+            this.Controls.Add(this.txtIdHistorial);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Historial_de_IncidentesForm";
             this.Text = "Historial_de_IncidentesForm";
+            this.Load += new System.EventHandler(this.Historial_de_IncidentesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHistorial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -203,7 +205,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCreadoporHistorial;
+        private System.Windows.Forms.TextBox txtIdHistorial;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtUsuarioHistorial;
         private System.Windows.Forms.TextBox txtModificadoporHistorial;

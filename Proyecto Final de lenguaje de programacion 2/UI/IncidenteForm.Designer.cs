@@ -120,7 +120,6 @@
             this.label7.Size = new System.Drawing.Size(105, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Comentario de Cierre";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -206,7 +205,6 @@
             this.DepartamentoIdIncidente.Name = "DepartamentoIdIncidente";
             this.DepartamentoIdIncidente.Size = new System.Drawing.Size(100, 20);
             this.DepartamentoIdIncidente.TabIndex = 25;
-            this.DepartamentoIdIncidente.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txtDescripcionIncidente
             // 
@@ -279,6 +277,7 @@
             this.btnCrearIncidente.TabIndex = 31;
             this.btnCrearIncidente.Text = "Crear";
             this.btnCrearIncidente.UseVisualStyleBackColor = true;
+            this.btnCrearIncidente.Click += new System.EventHandler(this.btnCrearIncidente_Click);
             // 
             // IncidenteForm
             // 
@@ -315,6 +314,7 @@
             this.Controls.Add(this.label1);
             this.Name = "IncidenteForm";
             this.Text = "IncidenteForm";
+            this.Load += new System.EventHandler(this.IncidenteForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvIncidente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
