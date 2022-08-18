@@ -17,7 +17,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.UI
     {
 
         HistorialncidenteRepository _repository = new HistorialncidenteRepository();
-        HistorialncidenteRepository actualHistorial;
+        Historial_Incidente actualHistorial;
 
         IncidenteRepository _repositoryIncidente = new IncidenteRepository();
         Incidente actualIncidente;
@@ -60,7 +60,6 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.UI
 
                         Id = 0,
                         Comentario = txtComentarioHistorial.Text,
-                        Incidente = actualIncidente,
                         IncidenteId = actualIncidente.Id,
                         Estatus = "A",
                         Borrado = 0,
@@ -71,6 +70,54 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.UI
                     _repository.Create(historial);
 
                     MessageBox.Show("El historial ha sido registrado exitosamente.");
+                    fullDTGV();
+                }
+            }
+        }
+
+        private void btnBuscarHistorial_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(txtIdHistorial.Text))
+            {
+                fullDTGV();
+            }
+            else
+            {
+                actualHistorial = _repository.getById(Int32.Parse(txtIdHistorial.Text));
+
+                if (actualHistorial == null)
+                {
+                    MessageBox.Show("Este historial no existe");
+                }
+                else
+                {
+                    txtIncidenteIdHistorial.Text = actualHistorial.IncidenteId.ToString();
+                    txtComentarioHistorial.Text = actualHistorial.Comentario;
+
+                }
+
+            }
+        }
+
+        private void btnActualizarHistorial_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(txtIncidenteIdHistorial.Text) ||
+                String.IsNullOrWhiteSpace(txtComentarioHistorial.Text))
+            {
+                MessageBox.Show("Debe llenar los campo de Incidente Id y Comentario");
+            }
+            else
+            {
+                actualHistorial.Comentario = txtComentarioHistorial.Text;
+                actualHistorial.IncidenteId = Int32.Parse(txtIncidenteIdHistorial.Text);
+                OperationResult result = _repository.Update(actualHistorial);
+                if (!result.Succes)
+                {
+                    MessageBox.Show(result.Message);
+                }
+                else
+                {
+                    MessageBox.Show("EL hisotiral ha sido actualizado exitosamente.");
                     fullDTGV();
                 }
             }

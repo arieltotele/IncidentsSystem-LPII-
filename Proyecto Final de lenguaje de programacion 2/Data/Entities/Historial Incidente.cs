@@ -13,7 +13,6 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
     {
 
         public int IncidenteId { get; set; }
-        public Incidente Incidente { get; set; }
 
         [Required]
         [MaxLength(500)]

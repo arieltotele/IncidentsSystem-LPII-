@@ -10,40 +10,34 @@
             CreateTable(
                 "dbo.Departamento",
                 c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        Nombre = c.String(nullable: false, maxLength: 100, unicode: false),
-                        Creadopor = c.Int(nullable: false),
-                        Modificadopor = c.Int(nullable: false),
-                        Estatus = c.String(nullable: false, maxLength: 2),
-                        Borrado = c.Byte(nullable: false),
-                        FechaRegistro = c.DateTimeOffset(nullable: false, precision: 7),
-                        FechaModificacion = c.DateTimeOffset(precision: 7),
-                        usuario_Id = c.Int(),
-                    })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.UsuarioId", t => t.usuario_Id)
-                .Index(t => t.usuario_Id);
-            
+                {
+                    Id = c.Int(nullable: false, identity: true),
+                    Nombre = c.String(nullable: false, maxLength: 100, unicode: false),
+                    Creadopor = c.Int(nullable: false),
+                    Modificadopor = c.Int(nullable: false),
+                    Estatus = c.String(nullable: false, maxLength: 2),
+                    Borrado = c.Byte(nullable: false),
+                    FechaRegistro = c.DateTimeOffset(nullable: false, precision: 7),
+                    FechaModificacion = c.DateTimeOffset(precision: 7),
+                    usuario_Id = c.Int(),
+                })
+                .PrimaryKey(t => t.Id);
+
             CreateTable(
                 "dbo.Puesto",
                 c => new
-                    {
-                        Id = c.Int(nullable: false),
-                        Departamentoid = c.Int(nullable: false),
-                        Nombre = c.String(nullable: false, maxLength: 100, unicode: false),
-                        Creadopor = c.Int(nullable: false),
-                        Modificadopor = c.Int(nullable: false),
-                        Estatus = c.String(nullable: false, maxLength: 2),
-                        Borrado = c.Byte(nullable: false),
-                        FechaRegistro = c.DateTimeOffset(nullable: false, precision: 7),
-                        FechaModificacion = c.DateTimeOffset(precision: 7),
-                    })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Departamento", t => t.Departamentoid, cascadeDelete: true)
-                .ForeignKey("dbo.UsuarioId", t => t.Id)
-                .Index(t => t.Id)
-                .Index(t => t.Departamentoid);
+                {
+                    Id = c.Int(nullable: false),
+                    Departamentoid = c.Int(nullable: false),
+                    Nombre = c.String(nullable: false, maxLength: 100, unicode: false),
+                    Creadopor = c.Int(nullable: false),
+                    Modificadopor = c.Int(nullable: false),
+                    Estatus = c.String(nullable: false, maxLength: 2),
+                    Borrado = c.Byte(nullable: false),
+                    FechaRegistro = c.DateTimeOffset(nullable: false, precision: 7),
+                    FechaModificacion = c.DateTimeOffset(precision: 7),
+                })
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.UsuarioId",

@@ -32,10 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdHistorial = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtUsuarioHistorial = new System.Windows.Forms.TextBox();
-            this.txtModificadoporHistorial = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.txtIncidenteIdHistorial = new System.Windows.Forms.TextBox();
             this.txtComentarioHistorial = new System.Windows.Forms.TextBox();
             this.dtgvHistorial = new System.Windows.Forms.DataGridView();
@@ -58,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 132);
+            this.label2.Location = new System.Drawing.Point(243, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 1;
@@ -66,7 +62,7 @@
             // 
             // txtIdHistorial
             // 
-            this.txtIdHistorial.Location = new System.Drawing.Point(82, 198);
+            this.txtIdHistorial.Location = new System.Drawing.Point(552, 45);
             this.txtIdHistorial.Name = "txtIdHistorial";
             this.txtIdHistorial.Size = new System.Drawing.Size(100, 20);
             this.txtIdHistorial.TabIndex = 15;
@@ -74,43 +70,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(17, 201);
+            this.label9.Location = new System.Drawing.Point(487, 48);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(21, 13);
             this.label9.TabIndex = 14;
             this.label9.Text = "ID:";
-            // 
-            // txtUsuarioHistorial
-            // 
-            this.txtUsuarioHistorial.Location = new System.Drawing.Point(343, 94);
-            this.txtUsuarioHistorial.Name = "txtUsuarioHistorial";
-            this.txtUsuarioHistorial.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuarioHistorial.TabIndex = 25;
-            // 
-            // txtModificadoporHistorial
-            // 
-            this.txtModificadoporHistorial.Location = new System.Drawing.Point(343, 38);
-            this.txtModificadoporHistorial.Name = "txtModificadoporHistorial";
-            this.txtModificadoporHistorial.Size = new System.Drawing.Size(100, 20);
-            this.txtModificadoporHistorial.TabIndex = 24;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(294, 101);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 13);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Usuario";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(260, 45);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 13);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Modificado por";
             // 
             // txtIncidenteIdHistorial
             // 
@@ -121,7 +85,7 @@
             // 
             // txtComentarioHistorial
             // 
-            this.txtComentarioHistorial.Location = new System.Drawing.Point(82, 129);
+            this.txtComentarioHistorial.Location = new System.Drawing.Point(313, 42);
             this.txtComentarioHistorial.Name = "txtComentarioHistorial";
             this.txtComentarioHistorial.Size = new System.Drawing.Size(100, 20);
             this.txtComentarioHistorial.TabIndex = 27;
@@ -151,6 +115,7 @@
             this.btnActualizarHistorial.TabIndex = 34;
             this.btnActualizarHistorial.Text = "Actualizar";
             this.btnActualizarHistorial.UseVisualStyleBackColor = true;
+            this.btnActualizarHistorial.Click += new System.EventHandler(this.btnActualizarHistorial_Click);
             // 
             // btnBuscarHistorial
             // 
@@ -160,6 +125,7 @@
             this.btnBuscarHistorial.TabIndex = 33;
             this.btnBuscarHistorial.Text = "Buscar";
             this.btnBuscarHistorial.UseVisualStyleBackColor = true;
+            this.btnBuscarHistorial.Click += new System.EventHandler(this.btnBuscarHistorial_Click);
             // 
             // btnCrearHistorial
             // 
@@ -184,10 +150,6 @@
             this.Controls.Add(this.dtgvHistorial);
             this.Controls.Add(this.txtComentarioHistorial);
             this.Controls.Add(this.txtIncidenteIdHistorial);
-            this.Controls.Add(this.txtUsuarioHistorial);
-            this.Controls.Add(this.txtModificadoporHistorial);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.txtIdHistorial);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
@@ -207,10 +169,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIdHistorial;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtUsuarioHistorial;
-        private System.Windows.Forms.TextBox txtModificadoporHistorial;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtIncidenteIdHistorial;
         private System.Windows.Forms.TextBox txtComentarioHistorial;
         private System.Windows.Forms.DataGridView dtgvHistorial;
