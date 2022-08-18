@@ -7,13 +7,13 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class emptymigration : IMigrationMetadata
+    public sealed partial class nullablefields : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(emptymigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(nullablefields));
         
         string IMigrationMetadata.Id
         {
-            get { return "202208150836259_empty-migration"; }
+            get { return "202208171709336_nullable-fields"; }
         }
         
         string IMigrationMetadata.Source

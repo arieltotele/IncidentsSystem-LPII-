@@ -13,17 +13,14 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Data.Entities
     {
 
         public int IncidenteId { get; set; }
-        public Incidente Incidente { get; set; }
 
         [Required]
         [MaxLength(500)]
         [Column(TypeName = "varchar")]
         public string Comentario { get; set; }
 
-        public int Creadopor { get; set; }
+        public int? Creadopor { get; set; }
 
-        public int Modificadopor { get; set; }
-
-        public Usuarioid usuario { get; set; }
+        public int? Modificadopor { get; set; }
     }
 }

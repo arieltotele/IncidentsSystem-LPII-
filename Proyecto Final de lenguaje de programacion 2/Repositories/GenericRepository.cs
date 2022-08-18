@@ -20,6 +20,7 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Repositories
         public T Create(T model)
         {
             _dbContext.Entry(model).State = EntityState.Added;
+        
             _dbContext.SaveChanges();
 
             return model;
@@ -27,14 +28,14 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Repositories
 
         public OperationResult Delete(T model)
         {
-            _dbContext.Entry(_set).State = EntityState.Modified;
+            _dbContext.Entry(model).State = EntityState.Modified;
             model.Borrado = 1;
             model.Estatus = "I";
             model.FechaModificacion = DateTime.Today;
 
 
             _dbContext.SaveChanges();
-            return new OperationResult() { Succes = true };
+            return new OperationResult() { Succes = true, Message = "Ha ocurrido un error. Intente mas tarde." };
         }
 
         public List<T> getAll()
@@ -49,10 +50,11 @@ namespace Proyecto_Final_de_lenguaje_de_programacion_2.Repositories
 
         public OperationResult Update(T model)
         {
-           _dbContext.Entry(model).State = EntityState.Modified;
-           _dbContext.SaveChanges();
+            _dbContext.Entry(model).State = EntityState.Modified;
+            model.FechaModificacion = DateTime.Today;
+            _dbContext.SaveChanges();
 
-            return new OperationResult() { Succes = true };
+            return new OperationResult() { Succes = true, Message = "Ha ocurrido un error. Intente mas tarde." };
 
         }
     }
